@@ -5,12 +5,12 @@ package trabalhoprog;
 public class Conta {
     
     public int numero, cpf;
-    public Agencia agencia;
+    public int agencia;
 
     public Conta() {
     }
     
-    public Conta(int numero, int cpf, Agencia agencia) {
+    public Conta(int numero, int cpf, int agencia) {
         this.numero = numero;
         this.cpf = cpf;
         this.agencia = agencia;
@@ -24,7 +24,7 @@ public class Conta {
         return cpf;
     }
 
-    public Agencia getAgencia() {
+    public int getAgencia() {
         return agencia;
     }
 
@@ -36,7 +36,7 @@ public class Conta {
         this.cpf = cpf;
     }
 
-    public void setAgencia(Agencia agencia) {
+    public void setAgencia(int agencia) {
         this.agencia = agencia;
-    }
+    }    
 }

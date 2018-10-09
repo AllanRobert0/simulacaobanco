@@ -4,13 +4,13 @@ package trabalhoprog;
 
 public class Cliente {
     
-    public String nome;
-    public int cpf, numeroTelefone, cpfIndicacao;
-
+    public String cpf, nome;
+    public int  numeroTelefone, cpfIndicacao;
+    
     public Cliente() {
     }
     
-    public Cliente(String nome, int cpf, int numeroTelefone, int cpfIndicacao) {
+    public Cliente(String nome, String cpf, int numeroTelefone, int cpfIndicacao) {
         this.nome = nome;
         this.cpf = cpf;
         this.numeroTelefone = numeroTelefone;
@@ -21,7 +21,7 @@ public class Cliente {
         return nome;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
@@ -37,7 +37,7 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 

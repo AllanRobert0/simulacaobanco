@@ -4,40 +4,40 @@ package trabalhoprog;
 
 public class Conta {
     
-    public int numero, cpf;
-    public Agencia agencia;
+    public int NumeroAgencia;
+    public String cpf;
+    public int agencia;
 
     public Conta() {
     }
     
-    public Conta(int numero, int cpf, Agencia agencia) {
-        this.numero = numero;
+    public Conta(int numero, String cpf, int agencia) {
+        this.NumeroAgencia = numero;
         this.cpf = cpf;
         this.agencia = agencia;
     }
 
     public int getNumero() {
-        return numero;
+        return NumeroAgencia;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public Agencia getAgencia() {
+    public int getAgencia() {
         return agencia;
     }
 
     public void setNumero(int numero) {
-        this.numero = numero;
+        this.NumeroAgencia = numero;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public void setAgencia() {
-        agencia.setEndereco(Input.readString("Digite o numero da agencia: ")); 
-        agencia.setNumero(Input.readInt("Digite o numero da agencia: ")); 
+    public void setAgencia(int Numero) {        
+        this.setNumero(NumeroAgencia);
     }
 }
